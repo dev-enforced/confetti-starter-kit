@@ -1,4 +1,5 @@
+import "./styles/App.css";
 const App = () => {
-  return `<h1>Hello from App</h1>`;
+  return `<button>CLICK TO SEE</button>`;
 };
 export { App };

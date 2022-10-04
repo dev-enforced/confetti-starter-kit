@@ -1,4 +1,10 @@
 import { App } from "./App";
-console.log("Testing webpack dev server connection");
+import "./index.css";
 const root = document.getElementById("root");
-root.innerHTML = `The index js file format ${App()}`;
+root.innerHTML = `
+<div>
+    <h1>Confetti Starter Kit</h1>
+    <p class="description">Click on the button and see more</p>
+</div>
+${App()}
+`;
