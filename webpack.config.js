@@ -1,5 +1,6 @@
 const path = require("path");
 const HTMLWebpackPlugin = require("html-webpack-plugin");
+const MiniCSSExtractPlugin = require("mini-css-extract-plugin");
 const webpackConfig = {
   mode: "production",
   entry: path.resolve(__dirname, "src", "index.js"),
@@ -23,6 +24,9 @@ const webpackConfig = {
       title: "Confetti Kit Starter",
       template: path.resolve(__dirname, "src", "index.html"),
     }),
+    new MiniCSSExtractPlugin({
+      filename: "[name].css",
+    }),
   ],
   module: {
     rules: [
@@ -38,7 +42,13 @@ const webpackConfig = {
       },
       {
         test: /\.css$/i,
-        use: ["style-loader", "css-loader"],
+        use: [
+          {
+            loader: MiniCSSExtractPlugin.loader,
+          },
+          "css-loader",
+          "postcss-loader",
+        ],
       },
     ],
   },
