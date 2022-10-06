@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap");
-
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #bfefff;
-  font-family: "Inter", sans-serif;
+.clickBtn {
+  border: transparent;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  padding: 16px 18px;
+  background-image: linear-gradient(90deg, #501fc1, #c245d3, #f0567a);
 }

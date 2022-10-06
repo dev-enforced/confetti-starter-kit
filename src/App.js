@@ -1,5 +1,6 @@
 import "./styles/App.css";
+
 const App = () => {
-  return `<button>CLICK TO SEE</button>`;
+  return `<button class="clickBtn">CLICK TO SEE</button>`;
 };
 export { App };
