@@ -3,9 +3,13 @@ const HTMLWebpackPlugin = require("html-webpack-plugin");
 const MiniCSSExtractPlugin = require("mini-css-extract-plugin");
 const webpackConfig = {
   mode: "production",
-  entry: path.resolve(__dirname, "src", "index.js"),
+  entry: {
+    index: { import: "./src/index.js", dependOn: "shared" },
+    App: { import: "./src/App.js", dependOn: "shared" },
+    shared: "canvas-confetti",
+  },
   output: {
-    filename: "main.js",
+    filename: "[name].[contenthash].bundle.js",
     path: path.resolve(__dirname, "dist"),
     clean: true,
   },
@@ -50,7 +54,23 @@ const webpackConfig = {
           "postcss-loader",
         ],
       },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: "asset/resource",
+      },
     ],
+  },
+  optimization: {
+    splitChunks: {
+      cacheGroups: {
+        node_vendors: {
+          name: "vendor",
+          test: /[\\/]node_modules[\\/]/,
+          chunks: "all",
+          priority: 1,
+        },
+      },
+    },
   },
 };
 
