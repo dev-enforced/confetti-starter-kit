@@ -1,5 +1,6 @@
 {
   "name": "confetti-starter-kit",
+  "homepage":"https://dev-enforced.github.io/confetti-starter-kit/",
   "version": "1.0.0",
   "description": "Webpack starter kit with confetti feature",
   "main": "index.js",
@@ -20,7 +21,6 @@
   "bugs": {
     "url": "https://github.com/dev-enforced/confetti-starter-kit/issues"
   },
-  "homepage": "https://github.com/dev-enforced/confetti-starter-kit#readme",
   "devDependencies": {
     "@babel/core": "^7.19.3",
     "@babel/preset-env": "^7.19.3",
