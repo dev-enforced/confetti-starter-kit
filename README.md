@@ -28,6 +28,7 @@ Follow the below instructions to use this starter kit:
 ```
 degit dev-enforced/confetti-starter-kit#main my-app-name
 cd my-app-name
+npm install
 
 # to start your application in localhost:3000
 using npm --> npm run start
@@ -45,5 +46,6 @@ This application contains the following dependencies provided by wepack.
 - Caching
 - HTML optimisation
 
-Has an extra feature in addition to the above"
-- Confetti Launch feature on button click
+Has an extra feature in addition to the above:
+
+- Confetti Launch feature on button click.
