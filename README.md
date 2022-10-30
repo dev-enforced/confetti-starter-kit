@@ -49,3 +49,11 @@ This application contains the following dependencies provided by wepack.
 Has an extra feature in addition to the above:
 
 - Confetti Launch feature on button click.
+
+## Development Mode
+
+- Run using `npm start` which will create a live server with hot-reload.
+
+## Production mode
+
+- Run `npm run build`, this'll combine and create a `dist` with the resulted code for deployment.
