@@ -1,0 +1,1 @@
+{"version":3,"file":"App.ed2292d97e68cc1a4938.bundle.js","mappings":"gKAEA,MAAMA,EAAM,IACF,gD","sources":["webpack://confetti-starter-kit/./src/App.js"],"sourcesContent":["import \"./styles/App.css\";\r\n\r\nconst App = () => {\r\n  return `<button class=\"clickBtn\">CLICK TO SEE</button>`;\r\n};\r\nexport { App };\r\n"],"names":["App"],"sourceRoot":""}

@@ -1,3 +1,5 @@
 @import url(https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap);
 .clickBtn{background-image:linear-gradient(90deg,#501fc1,#c245d3,#f0567a);border:transparent;border-radius:8px;color:#fff;cursor:pointer;font-size:1.125rem;line-height:1.75rem;padding:16px 18px}
 body{background-color:#211212;color:#b8a088;display:flex;flex-direction:column;font-family:Inter,sans-serif;position:relative}.confetti-asset{height:120px;width:90%}#root{align-items:center;display:flex;flex-direction:column;justify-content:center;min-height:100vh}
+
+/*# sourceMappingURL=index.css.map*/

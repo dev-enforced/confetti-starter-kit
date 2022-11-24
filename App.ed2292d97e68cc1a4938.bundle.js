@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkconfetti_starter_kit=self.webpackChunkconfetti_starter_kit||[]).push([[768],{255:function(t,n,c){c.d(n,{g:function(){return s}});const s=()=>'<button class="clickBtn">CLICK TO SEE</button>'}},function(t){t(t.s=255)}]);
+//# sourceMappingURL=App.ed2292d97e68cc1a4938.bundle.js.map
