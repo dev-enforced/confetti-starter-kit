@@ -1,7 +1,7 @@
 const commonWebpackConfig = require("./webpack.config.common");
 const { merge } = require("webpack-merge");
 
-const originalWebpackConfig = merge(commonWebpackConfig, {
+const developmentWebpackConfig = merge(commonWebpackConfig, {
   mode: "development",
   devtool: "inline-source-map",
   devServer: {
@@ -9,4 +9,4 @@ const originalWebpackConfig = merge(commonWebpackConfig, {
   },
 });
 
-module.exports = originalWebpackConfig;
+module.exports = developmentWebpackConfig;

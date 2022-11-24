@@ -1,13 +1,15 @@
 {
   "name": "confetti-starter-kit",
-  "homepage":"https://dev-enforced.github.io/confetti-starter-kit/",
+  "homepage": "https://dev-enforced.github.io/confetti-starter-kit/",
   "version": "1.0.0",
   "description": "Webpack starter kit with confetti feature",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack serve",
-    "build": "webpack",
+    "start": "webpack server --config=webpack.config.js --open",
+    "build": "webpack --config=webpack.config.prod.js",
+    "build-dev": "webpack --config=webpack.config.dev.js",
+    "watch": "webpack --watch",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
@@ -41,6 +43,7 @@
     "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
-    "degit": "^2.8.4"
+    "degit": "^2.8.4",
+    "webpack-merge": "^5.8.0"
   }
 }
